@@ -34,8 +34,8 @@
 ส่งในดิสคอด Thread MidTerm
 
 - ชื่อนามสกุล + รหัส
-- แคป Particle Module แต่ละอันแยกเป็น Folder
-- แคป Shader แยก เป็น Folder
+- Screenshot Particle Module แต่ละอันแยกเป็น Folder
+- Screenshot Shader แยก เป็น Folder
 
 ## หมายเหตุ
 
