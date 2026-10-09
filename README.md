@@ -1,25 +1,42 @@
 # Project Template สำหรับวิชา CGE499 Visual Effect for Game
 
-## Installation
-- Unity version 6.3 LTS [Download](https://unity.com/download)
-- Visual Studio / Visual Studio Code
-## Shader Graph
-Tool เอาไว้สำหรับเขียน Shader แบบ Visual Node ทำให้ง่ายสำหรับผู้ที่เริ่มต้นเขียน Shader
-วิธีลง
-- Package Manager
-- เลือก Unity Registry
-- Shader Graph
+## How to
 
+- Unity 6.3 LTS [Download](https://unity.com/download)
+- Download Repo นี้ Branch [mid-term](https://github.com/menstood/vfx-for-game-2026/tree/mid-term)
+- Scene ชื่อ MidTerm
 
-<br>[Document](https://docs.unity3d.com/Manual/shader-graph.html)</br>
-[แบบง่ายๆ](https://github.com/menstood/ShaderGraph)
+## โจทย์
 
-## Particle System
-Tool สำหรับสร้าง Particle Effect แบบพื้นฐาน สำหรับคนที่ไม่เคยเขียนโค้ดมาก่อน
-## VFX Graph
-Tool สำหรับสร้าง Particle Effect แบบขั้นสูง เหมาะสำหรับคนที่เชี่ยวชาญ Visual Node
-วิธีลง
-- Package Manager
-- เลือก Unity Registry
-- VFX Graph
+ทำให้ Scene นี้มันสวยตามความเหมาะสม
 
+- จัดแสง
+- ใส่ Shader
+- ใส่ Particle
+- ใส่ Skybox
+- Post Processing
+
+## เงื่อนไข
+
+- VFX Graph สามารถใช้ได้
+- Particle System สามารถใช้ได้
+- Import Texture เข้ามาเพิ่ม สามารถทำได้
+- Import Skybox สามารถทำได้
+
+## ข้อห้าม
+
+- Unity GLSL/HLSL Shader ไม่สามารถใช้ได้
+- Import Model เข้ามาเพิ่ม ไม่สามารถทำได้
+- Script นอกจาก Builtin ของ Unity ไม่สามารถใช้ได้
+
+## วิธีส่ง
+
+ส่งในดิสคอด Thread MidTerm
+
+- ชื่อนามสกุล + รหัส
+- แคป Particle Module แต่ละอันแยกเป็น Folder
+- แคป Shader แยก เป็น Folder
+
+## หมายเหตุ
+
+มีปัญหา ติดต่อใน Discord ได้เลยครับ
