@@ -1,20 +1,37 @@
 using System;
 using UnityEngine;
 
+public enum SkillType
+{
+    ChargedShot,
+    RainOfArrows,
+    CrouchShot,
+    AerialShot,
+}
+
+// Each VFX slot is a scene object: put your VFX inside it and turn off its Placeholder.
 [Serializable]
 public class SkillSlot
 {
-    public string skillName = "Skill";
+    [SerializeField] string skillName = "Skill";
+    [SerializeField] SkillType type;
 
-    [Tooltip("Follows the bow while the archer aims. Its forward (Z) axis points at the target.")]
-    public GameObject cast;
+    [SerializeField] GameObject circle;
+    [SerializeField] GameObject cast;
+    [SerializeField] GameObject projectile;
+    [SerializeField] GameObject impact;
 
-    [Tooltip("Flies from the bow to the target. Its forward (Z) axis points along the flight direction.")]
-    public GameObject projectile;
+    [SerializeField, Min(0f)] float releaseTime = 2f;
+    [SerializeField, Min(0.1f)] float projectileSpeed = 20f;
+    [SerializeField, Min(0f)] float impactDuration = 1.5f;
 
-    [Tooltip("Spawned at the hit point. Its forward (Z) axis points back toward the archer.")]
-    public GameObject impact;
-
-    [Min(0.1f)] public float projectileSpeed = 15f;
-    [Min(0f)] public float impactDuration = 1.5f;
+    public string SkillName => skillName;
+    public SkillType Type => type;
+    public GameObject Circle => circle;
+    public GameObject Cast => cast;
+    public GameObject Projectile => projectile;
+    public GameObject Impact => impact;
+    public float ReleaseTime => releaseTime;
+    public float ProjectileSpeed => projectileSpeed;
+    public float ImpactDuration => impactDuration;
 }
